@@ -1,0 +1,61 @@
+.get {
+    margin-bottom: 165px;
+}
+
+.get__title {
+    font-family: 'Montserrat Alternates';
+    font-weight: 700;
+    font-size: 42px;
+    text-align: center;
+    color: #191919;
+    margin-bottom: 40px;
+}
+
+.get__title-span {
+    color: rgb(155, 81, 224);
+}
+
+.get__grids {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+
+.get__grid {
+    width: min(282px, 100%);
+    text-align: center;
+}
+
+.get__grid-title {
+    padding: 20px 0 10px;
+    font-family: 'Montserrat Alternates';
+    font-weight: 700;
+    font-size: 18px;
+    color: #191919;
+}
+
+.get__grid-txt {
+    color: #191919;
+}
+
+@media (width <= 1230px) {
+    .get__grids {
+        grid-template-columns: repeat(1, 1fr);
+        justify-items: center;
+    }
+
+    .get__grid {
+        width: min(700px, 100%);
+        display: flex;
+        align-items: center;
+    }
+
+    .get__grid-titles {
+        text-align: left;
+        margin-left: 30px;
+    }
+
+    .get__grid-title br {
+        display: none;
+    }
+}

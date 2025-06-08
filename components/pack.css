@@ -1,0 +1,324 @@
+.pack {
+    margin: 240px 0 200px;
+}
+
+.pack__title {
+    font-family: 'Montserrat Alternates';
+    font-weight: 700;
+    font-size: 42px;
+    text-align: center;
+    color: #000;
+    margin-bottom: 40px;
+}
+
+.pack__title-span {
+    color: #9B51E0;
+}
+
+.pack__grids {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.pack__grid {
+    width: min(386px, 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 30px;
+    box-shadow: 0px 4px 30px 0px #0000001A;
+    background: #fff;
+    border-radius: 15px;
+}
+
+.pack__grid-title {
+    margin: 20px 0 10px;
+    font-family: 'Montserrat Alternates';
+    font-weight: 700;
+    font-size: 22px;
+    color: #191919;
+}
+
+.pack__grid-span {
+    font-size: 16px;
+    color: #191919;
+}
+
+.pack__grid-line {
+    margin: 20px 0 25px;
+    border: 1px solid #EAEAEA;
+    width: 100%;
+}
+
+.pack__grid-txt {
+    font-weight: 600;
+    font-size: 16px;
+    color: #191919;
+}
+
+.pack__grid-prices {
+    margin: 20px 0 10px;
+    display: flex;
+    align-items: center;
+    gap: 112px;
+}
+
+.pack__grid-price {
+    font-family: 'Montserrat Alternates';
+    font-weight: 700;
+    font-size: 36px;
+    color: #9B51E0;
+}
+
+.pack__grid-price-span {
+    font-weight: 500;
+    font-size: 16px;
+    color: #9B51E0;
+}
+
+.order-btn {
+    cursor: pointer;
+    padding: 15px 75px;
+    font-weight: 700;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #fff;
+    border: 3px solid #fff;
+    border-radius: 30px;
+    box-shadow: 0 0 15px 4px rgba(212, 149, 4, 0.3);
+    background: #F2994A;
+    transition: box-shadow 0.3s ease;
+}
+
+/* All Modal */
+/* ---- Shotdan Boshlab togirlangan ---- */
+
+.overlay {
+    display: none;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(8px); 
+    z-index: 999;
+    overflow-y: auto;
+    transition: opacity 0.4s ease;
+}
+
+.overlay.active {
+    display: block;
+    opacity: 1;
+}
+
+.modal {
+    display: none;
+    position: relative;
+    max-width: 600px;
+    margin: 80px auto;
+    background: #fff;
+    border-radius: 15px;
+    padding: 20px;
+    z-index: 1000;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    transform: translateY(-30px);
+    transition: all .4s ease;
+}
+
+.modal.active {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.modal-content {
+    background: #fff;
+    padding: 20px;
+    border-radius: 15px;
+    position: relative;
+}
+
+.modal-content h2 {
+    text-align: center;
+}
+
+.modal-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.purple {
+    color: #9B51E0;
+}
+
+.subtitle {
+    padding: 12px 0 10px;
+    font-weight: 700;
+    color: #191919;
+    text-align: center;
+}
+
+.form-big select {
+    font-family: 'Montserrat Alternates';
+    font-weight: 700;
+    font-size: 16px;
+    color: #191919;
+    border: none;
+    box-shadow: 0px 4px 10px 0px #0000001A;
+}
+
+input,
+select {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin: 12px 0;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+    font-size: 16px;
+}
+
+.details-section label {
+    font-weight: 700;
+    color: #191919;
+    margin: 40px 0 15px;
+    display: block;
+}
+
+.order-summary {
+    margin: 20px 0;
+}
+
+.order-summ-txt {
+    margin: 100px 0 15px;
+    text-align: center;
+    font-family: 'Montserrat Alternates';
+    font-weight: 700;
+    font-size: 16px;
+    text-align: center;
+    color: #191919;
+}
+
+.order-box {
+    display: flex;
+    align-items: center;
+    text-align: left;
+    background: #fafafa;
+    padding: 10px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+}
+
+.order-box img {
+    width: 104px;
+    height: 70px;
+    border-radius: 5px;
+    margin-right: 15px;
+}
+
+.order-txt {
+    font-weight: 700;
+    color: #191919;
+}
+
+.order-subtxt {
+    font-size: 12px;
+    color: #191919;
+    margin-top: 5px;
+}
+
+.price {
+    margin-left: auto;
+    color: #9B51E0;
+    font-weight: 700;
+}
+
+.next-btn,
+.btn {
+    cursor: pointer;
+    width: min(340px, 100%);
+    padding: 12px 0;
+    font-size: 18px;
+    border-radius: 25px;
+    font-weight: 700;
+    margin-top: 15px;
+    border: 3px solid #fff;
+    background: #F2994A;
+    color: #fff;
+    box-shadow: 0 0 15px 4px rgba(212, 149, 4, 0.3);
+    transition: box-shadow 0.3s ease;
+    text-transform: uppercase;
+}
+
+.next-btn:hover,
+.btn:hover {
+    box-shadow: 0 0 18px 6px rgba(212, 149, 4, 0.4);
+}
+
+.overlay select {
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-size: 16px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border: none;
+    margin-bottom: 10px;
+    font-weight: 600;
+    color: #191919;
+}
+
+#modalThankYou h2 {
+    color: #9B51E0;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+#modalThankYou p {
+    font-size: 16px;
+    text-align: center;
+}
+
+/* .modal__sub-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 25px 30px;
+    background: #73f281;
+    color: #191919;
+    text-align: center;
+} */
+
+/* End Modal */
+
+
+@media (width <=1260px) {
+    .pack__grids {
+        grid-template-columns: repeat(2, 1fr);
+        width: 810px;
+        margin: auto;
+        gap: 40px;
+    }
+}
+
+@media (width <=850px) {
+    .pack__grids {
+        grid-template-columns: repeat(1, 1fr);
+        place-items: center;
+        gap: 35px;
+    }
+}

@@ -1,0 +1,175 @@
+.example {
+    position: relative;
+    margin-bottom: 115px;
+}
+
+.example::before {
+    content: '';
+    background: url(../img/hookah-images/example-smoke.png) no-repeat center center / cover;
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 710px;
+
+    @media (width <= 930px) {
+        background: none;
+    }
+}
+
+.example__banner {
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    height: 900px;
+}
+
+.example__big {
+    display: flex;
+    justify-content: space-between;
+    padding: 45px 0 40px;
+}
+
+.example__title {
+    font-family: 'Montserrat Alternates';
+    font-weight: 700;
+    font-size: 42px;
+    color: #191919;
+}
+
+.example__title-span {
+    color: #9B51E0;
+}
+
+.example__grids {
+    display: grid;
+    grid-template-columns: repeat(3, 3fr);
+    row-gap: 20px;
+    column-gap: 30px;
+}
+
+.example__grid {
+    width: min(282px, 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 35px;
+}
+
+.example__grid-img {
+    height: 125px;
+}
+
+.example__grid-after::after {
+    content: '';
+    background: url(../img/hookah-images/x3.svg);
+    position: absolute;
+    width: min(75px, 100%);
+    height: 40px;
+    top: -85px;
+    left: 195px;
+    z-index: 1;
+}
+
+.example__grid-button {
+    position: relative;
+    width: min(282px, 100%);
+    font-family: 'Montserrat Alternates';
+    padding: 15px 30px;
+    font-weight: 700;
+    font-size: 22px;
+    border-radius: 15px;
+    border: none;
+    cursor: pointer;
+    background: #fff;
+    color: #191919;
+    box-shadow: 0px 4px 30px 0px #00000014;
+}
+
+.example__button {
+    cursor: pointer;
+    width: min(900px, 100%);
+    margin-top: 25px;
+    display: flex;
+    align-items: center;
+    background: #F2994A;
+    padding: 15px 30px;
+    gap: 20px;
+    border: 3px solid #FFFFFF;
+    border-radius: 15px;
+}
+
+.example__plyus {
+    color: #fff;
+    padding: 3px 10px;
+    font-size: 23px;
+    background: #F2994A;
+    border: 2px solid #fff;
+    border-radius: 50px;
+}
+
+.example__txt {
+    font-family: 'Montserrat Alternates';
+    font-weight: 700;
+    font-size: 22px;
+    color: #fff;
+}
+
+.example__grid-none {
+    display: none;
+}
+
+@media (width <= 1170px) {
+    .example__big {
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .example__banner {
+        height: 950px;
+    }
+
+    .example__title {
+        text-align: center;
+    }
+
+    .example__title br {
+        display: none;
+    }
+
+    .example__grids {
+        margin-bottom: 25px;
+    }
+
+    .example__button {
+        margin: auto;
+    }
+}
+
+@media (width <= 930px) {
+    .example__banner {
+        display: none;
+    }
+
+    .example__grids {
+        grid-template-columns: repeat(2, 5fr);
+    }
+
+    .example__button-none {
+        display: none;
+    }
+
+    .example__grid-none {
+        width: 282px;
+        display: inline-block;
+        justify-items: center;
+        text-align: center;
+        flex-direction: column;
+        padding: 30px 15px 10px 15px;
+        margin-left: 0;
+    }
+
+    .example__plyus {
+        border: 4px solid #fff;
+        margin-bottom: 50px;
+    }
+}

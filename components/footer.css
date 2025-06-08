@@ -1,0 +1,80 @@
+.footer {
+    padding: 45px 0;
+    background: #FCF9FF;
+
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+
+.footer__logos {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.footer__face {
+    padding: 9px 13.5px;
+    background: #F2994A;
+    border-radius: 50%;
+}
+
+.footer__insta {
+    padding: 9px 9px;
+    background: #F2994A;
+    border-radius: 50%;
+}
+
+.footer__logo-tel {
+    margin: 0 -10px 0 27px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    background: #fff;
+}
+
+.footer__link-tel {
+    font-family: 'Montserrat Alternates';
+    font-weight: 700;
+    font-size: 20px;
+    color: #000;
+}
+
+.footer__txt {
+    font-weight: 700;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #9B51E0;
+}
+
+.footer__titles {
+    text-align: right;
+}
+
+.footer__title {
+    font-family: 'Montserrat Alternates';
+    font-weight: 700;
+    font-size: 18px;
+    color: #191919;
+}
+
+.footer__titles-txt {
+    margin-top: 10px;
+    color: #191919;
+}
+
+@media (width <= 970px) {
+    .footer {
+
+        .container {
+            flex-direction: column;
+            align-items: center;
+            gap: 50px;
+        }
+
+        .footer__titles {
+            text-align: center;
+        }
+    }
+}

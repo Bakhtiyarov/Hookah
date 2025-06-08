@@ -1,0 +1,70 @@
+.for {
+    margin-bottom: 100px;
+}
+
+.for__title {
+    width: min(235px, 100%);
+    font-family: 'Montserrat Alternates';
+    font-weight: 700;
+    font-size: 42px;
+    color: #191919;
+}
+
+.for__title-span {
+    color: rgb(155, 81, 224);
+}
+
+.for__text {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 90px;
+}
+
+.for__text-first {
+    width: min(802px, 100%);
+}
+
+.for__txt {
+    padding: 40px 0 25px;
+    width: min(802px, 100%);
+    color: #191919;
+}
+
+.for__fatty-txt {
+    width: min(802px, 100%);
+    font-weight: 600;
+    color: #191919;
+}
+
+.for__text-second {
+    width: min(282px, 100%);
+}
+
+.for__second-txt {
+    margin-top: 25px;
+    width: min(282px, 100%);
+    font-family: 'Montserrat Alternates';
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.for__second-txt-span {
+    color: rgb(155, 81, 224);
+}
+
+.main__hr {
+    border: 1px solid #EAEAEA;
+}
+
+@media (width <=1151px) {
+    .for__text {
+        flex-direction: column;
+    }
+
+    .for__second-txt,
+    .for__text-second,
+    .for__txt,
+    .for__fatty-txt {
+        width: min(690px, 100%);
+    }
+}

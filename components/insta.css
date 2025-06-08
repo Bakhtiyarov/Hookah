@@ -1,0 +1,75 @@
+.insta {
+    margin-bottom: 155px;
+}
+
+.insta__titles {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.insta__title {
+    font-family: 'Montserrat Alternates';
+    font-weight: 700;
+    font-size: 42px;
+    color: #191919;
+}
+
+.insta__title-span,
+.insta__big-span {
+    color: rgb(155, 81, 224);
+}
+
+.insta__button {
+    padding: 12px 27px;
+    background: #F2994A;
+    color: #fff;
+    font-weight: 700;
+    font-size: 14px;
+    border: none;
+    border-radius: 25px;
+}
+
+.insta__images {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.insta__grids {
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    align-items: center;
+    gap: 25px;
+}
+
+.insta__hr {
+    margin: 60px 0 40px;
+    border: 1px solid #EAEAEA;
+}
+
+.insta__big {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 15px;
+}
+
+.insta__big-title {
+    font-family: 'Montserrat Alternates';
+    font-weight: 700;
+    font-size: 24px;
+    color: #191919;
+}
+
+.insta__big-txt {
+    color: #191919;
+}
+
+@media (width <= 1240px) {
+    .insta__images {
+        flex-direction: column;
+    }
+}

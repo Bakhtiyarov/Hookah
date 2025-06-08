@@ -1,0 +1,24 @@
+@import url(font.css);
+@import url(common.css);
+
+/* components */ 
+
+@import url(../components/header.css);
+@import url(../components/nav.css);
+@import url(../components/for.css);
+@import url(../components/work.css);
+@import url(../components/choose.css);
+@import url(../components/get.css);
+@import url(../components/box.css);
+@import url(../components/insta.css);
+@import url(../components/footer.css);
+
+/* hookah html */
+
+@import url(../components/info.css);
+@import url(../components/example.css);
+@import url(../components/covid.css);
+@import url(../components/want.css);
+@import url(../components/order.css);
+@import url(../components/pack.css);
+

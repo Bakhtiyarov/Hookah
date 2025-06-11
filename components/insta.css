@@ -22,6 +22,7 @@
 }
 
 .insta__button {
+    cursor: pointer;
     padding: 12px 27px;
     background: #F2994A;
     color: #fff;
@@ -71,5 +72,21 @@
 @media (width <= 1240px) {
     .insta__images {
         flex-direction: column;
+    }
+}
+
+@media (width <= 670px) {
+    .insta__grids {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .insta__img {
+        width: 282px;
+        height: 282px;
+    }
+
+    .insta__titles {
+        flex-direction: column;
+        gap: 30px;
     }
 }

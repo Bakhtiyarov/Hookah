@@ -78,3 +78,18 @@
         }
     }
 }
+
+@media (width <= 470px) {
+    .footer__link-tel {
+        font-size: 15px;
+    }
+
+    .footer__logos {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer__logo-tel {
+        display: none;
+    }
+}

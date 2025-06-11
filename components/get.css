@@ -59,3 +59,14 @@
         display: none;
     }
 }
+
+@media (width <= 630px) {
+    .get__grid {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .get__grid-titles {
+        text-align: center;
+    }
+}

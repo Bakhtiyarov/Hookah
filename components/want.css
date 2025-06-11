@@ -64,3 +64,11 @@
         gap: 50px;
     }
 }
+
+@media (width <= 730px) {
+    .want__grids {
+        grid-template-columns: repeat(1, 1fr);
+        place-items: center;
+        gap: 40px;
+    }
+}

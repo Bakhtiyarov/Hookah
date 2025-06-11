@@ -68,6 +68,10 @@
     top: -85px;
     left: 195px;
     z-index: 1;
+
+    @media (width <= 600px) {
+        display: none;
+    }
 }
 
 .example__grid-button {
@@ -171,5 +175,17 @@
     .example__plyus {
         border: 4px solid #fff;
         margin-bottom: 50px;
+    }
+}
+
+@media (width <= 600px) {
+    .example__grids {
+        grid-template-columns: repeat(1, 1fr);
+        place-items: center;
+        gap: 35px;
+    }
+
+    .example__grid-none {
+        margin: auto;
     }
 }

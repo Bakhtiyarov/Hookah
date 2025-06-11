@@ -8,6 +8,10 @@
     @media (width <= 1220px) {
         height: 980px;
     }
+
+    @media (width <= 655px) {
+        height: 1350px;
+    }
 }
 
 .order__titles {
@@ -122,5 +126,25 @@
 @media (width <= 1160px) {
     .order__box-none {
         display: none;
+    }
+}
+
+@media (width <= 655px) {
+    .order__grids {
+        width: min(400px, 100%);
+        grid-template-columns: repeat(1, 1fr);
+        place-items: center;
+    }
+
+    .order__grid-txt {
+        width: min(230px);
+    }
+
+    .order__boxes {
+        margin-top: 200px;
+    }
+
+    .order__box-title {
+        color: #191919;
     }
 }

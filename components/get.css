@@ -64,9 +64,13 @@
     .get__grid {
         display: flex;
         flex-direction: column;
+        align-items: center;
     }
 
     .get__grid-titles {
         text-align: center;
+        display: flex;
+        flex-direction: column;
+        margin: 0;
     }
 }

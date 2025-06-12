@@ -53,6 +53,10 @@
     border-radius: 50%;
 }
 
+.order__grid-car {
+    padding: 24px 15px;
+}
+
 .order__grid-txt {
     width: min(188px, 100%);
     font-family: 'Montserrat Alternates';
